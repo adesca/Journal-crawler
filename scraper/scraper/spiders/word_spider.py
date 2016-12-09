@@ -29,7 +29,7 @@ class WordSpider(scrapy.Spider):
         for issue in response.css('div.tocArticleEntry div.art_title'):
             next_page = issue.css('a::attr(href)').extract()
             yield {
-                'article' : "True",
+                'article' : "false",
                 'Title' : issue.css('span.hlFld-Title::text').extract(),
                 'Link' : issue.css('a::attr(href)').extract(),
             }
@@ -39,7 +39,10 @@ class WordSpider(scrapy.Spider):
                 yield scrapy.Request(next_page, callback=self.parseArticles)
 
     def parseArticles(self,response):
-
+        yield {
+            'article' : "true",
+            'articleText' : response.css('div.abstractSection::text').extract(),
+            }
 '''
             next_page = issue.css('a::attr(href)').extract()
             yield {
