@@ -31,7 +31,7 @@ The current top five words used (on a per article basis) are:
 
 
 ## Libraries used
-I used scrapy and [word_cloud](https://github.com/amueller/word_cloud)
+I used numpy, scrapy, and [word_cloud](https://github.com/amueller/word_cloud).
 
 ## License
 
