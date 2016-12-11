@@ -17,6 +17,9 @@ The current top five words used (on a per article basis) are:
 4. lesbian - 190
 5. social - 143
 
+![word cloud of word use frequencies](https://github.com/adesca/Journal-crawler/blob/master/text%20parser/wordCloud.bmp "Word cloud")
+
+
 ### Documentation
 * scraper/ - contains the scraper's code. There are a couple of spiders with differing roles based on what I needed at the time.
   I don't want to go over it because this project should not be used for scraping.
