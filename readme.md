@@ -24,7 +24,7 @@ The current top five words used (on a per article basis) are:
 * badWordList.txt - list of words that are excluded from counting word usage.
   If you want to increase it just add a word to its own line.
 * text.jl - a list of json formatted objects, one per line, of each of the articles I could get (the most recent 315).
-* articleLinks.jl - Another jsonlist, but this one contains each article's title and accompanying link.
+* articleLinks.jl - Another jsonlist, but this one contains every article's title and accompanying link.
 
 
 ## Libraries used
