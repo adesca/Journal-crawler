@@ -17,6 +17,16 @@ The current top five words used (on a per article basis) are:
 4. lesbian - 190
 5. social - 143
 
+### Documentation
+* scraper/ - contains the scraper's code. There are a couple of spiders with differing roles based on what I needed at the time.
+  I don't want to go over it because this project should not be used for scraping.
+* text parser/ - contains a parser script that goes over the results I have and collects the word counts in addition to generating the cloud.
+* badWordList.txt - list of words that are excluded from counting word usage.
+  If you want to increase it just add a word to its own line.
+* text.jl - a list of json formatted objects, one per line, of each of the articles I could get (the most recent 315).
+* articleLinks.jl - Another jsonlist, but this one contains each article's title and accompanying link.
+
+
 ## Libraries used
 I used scrapy and [word_cloud](https://github.com/amueller/word_cloud)
 
