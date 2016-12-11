@@ -2,6 +2,8 @@ from collections import Counter
 import json
 import re
 from wordcloud import WordCloud
+from PIL import Image
+import numpy as np
 
 def getBadWords():
     wordList = []
@@ -34,15 +36,17 @@ def main():
                     words = getWords(tempDict["Title"][0])
                     for word in words:
                         c[word] += 1
-    '''
+    
     wordCloudString = ""
     for element in c.elements():
         wordCloudString += element+" "
-    wordcloud = WordCloud().generate(wordCloudString)
+		
+    mask = np.array(Image.open("pride flag.png"))
+    wordcloud = WordCloud(mask=mask).generate(wordCloudString)
     image = wordcloud.to_image()
-    image.save("wordCloud.bmp")
+    image.save("prideCloud.bmp")
     image.show()
-    '''
+    
     print(c['transgender']);
 
 if __name__ == '__main__':
