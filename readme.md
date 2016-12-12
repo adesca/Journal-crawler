@@ -17,7 +17,7 @@ The current top five words used (on a per article basis) are:
 4. lesbian - 190
 5. social - 143
 
-![word cloud of word use frequencies](https://github.com/adesca/Journal-crawler/blob/master/text%20parser/wordCloud.bmp "Word cloud")
+![word cloud of word use frequencies](https://github.com/adesca/Journal-crawler/blob/master/text%20parser/prideCloud2.bmp "Word cloud")
 
 
 ### Documentation
